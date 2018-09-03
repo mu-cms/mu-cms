@@ -40,3 +40,7 @@ Traditional Content Management Systems (CMS) mainly come in three popular flavou
 - [`apollo-angular`](https://www.apollographql.com/docs/angular/basics/setup.html) is used for all data access both in the server and the browser
 - During the build we'll use [`TransferState`](https://angular.io/api/platform-browser/TransferState) to [serialize our apollo cache to the HTML output](https://github.com/apollographql/apollo-angular/blob/master/docs/source/recipes/server-side-rendering.md)
 - During build [graphql resolvers](https://www.apollographql.com/docs/graphql-tools/resolvers) can be used to intercept content queries and populate them from the initial `vinyl` objects as well as generating additional `vinyl` objects that can be used to create [ETL](https://en.wikipedia.org/wiki/Extract,_transform,_load) artifacts targeting a running GraphQL server
+
+### Layout
+
+- [`markdown-to-html-pipe`](https://www.npmjs.com/package/markdown-to-html-pipe) will transform the page contents in the case of straight up content pages with access to the front matter and route data via [`setOptions`](https://github.com/conclurer/markdown-to-html-pipe/blob/master/src/markdown-to-html.pipe.ts#L14)
