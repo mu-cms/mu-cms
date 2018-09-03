@@ -16,11 +16,11 @@ Traditional Content Management Systems (CMS) mainly come in three popular flavou
 
 ### Autoring
 
-- `author` creates branch `article/testing` from `master` branch
+- `author` creates branch `feature` from `master` branch
 - `author` creates `articles/testing.md` containing [front matter](https://jekyllrb.com/docs/front-matter/) and [markdown](https://daringfireball.net/projects/markdown/syntax)
-- `author` commits changes to the `articles/testing` branch and syncs it to `origin` on a periodic basis as the article is developed
+- `author` commits changes to the `feature` branch and syncs it to `origin` on a periodic basis as the article is developed
 - When `author` is done he sends a [merge request](https://docs.gitlab.com/ee/user/project/merge_requests/) to `editor` requesting review and merge to `master`
-- `author` and `editor` go through the reviewing process and in the end `editor` [squases and merges](https://docs.gitlab.com/ee/user/project/merge_requests/squash_and_merge.html) `articles/testing` to `master`
+- `author` and `editor` go through the reviewing process and in the end `editor` [squases and merges](https://docs.gitlab.com/ee/user/project/merge_requests/squash_and_merge.html) `feature` to `master`
 
 ### Publishing
 
