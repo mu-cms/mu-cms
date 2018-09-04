@@ -40,7 +40,7 @@ Micro CMS defines patterns for comon flows for content management.
 
 ### Building
 
-- Routes are provided to [gulp](https://gulpjs.com/) in the form of a collection of [`vinyl`](https://www.npmjs.com/package/vinyl) objects where [`options.path`](https://github.com/gulpjs/vinyl#optionspath) can be mapped to a route
+- Routes are provided to [GulpJS](https://gulpjs.com/) in the form of a collection of [`vinyl`](https://www.npmjs.com/package/vinyl) objects where [`options.path`](https://github.com/gulpjs/vinyl#optionspath) can be mapped to a route
 - In Angular the [`renderModuleFactory`](https://angular.io/api/platform-server/renderModuleFactory) can be [used as a route renderer](https://github.com/angular/universal-starter/blob/master/prerender.ts#L36) and thus wrapped to consume a `vinyl` object
 - The prerendered output can be streamed back into a `vinyl` collection for further processing like critical CSS and HTML minification
 
