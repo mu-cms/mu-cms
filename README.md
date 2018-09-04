@@ -19,6 +19,7 @@ Micro CMS defines patterns for comon flows for content management.
 - **Authoring** : A pattern based on [`git`](https://git-scm.com/) and [`markdown`](https://daringfireball.net/projects/markdown/syntax) for content authoring
 * **Publishing** : Building on the previous pattern - use [`git`](https://git-scm.com/) for content publishing
 - **Building** : Describes how to use [GulpJS](https://gulpjs.com/) and [Angular](https://angular.io/) SSR for static publishing
+- **Persistence** : Describes how [`vinyl`](https://www.npmjs.com/package/vinyl) objects can be loaded from and save to [`git`](https://git-scm.com/) repositories
 - **Data** : Describes how to provide access content via GraphQL
 - **Layout** : Describes how individual page layout is handled
 
@@ -42,6 +43,10 @@ Micro CMS defines patterns for comon flows for content management.
 - Routes are provided to [gulp](https://gulpjs.com/) in the form of a collection of [`vinyl`](https://www.npmjs.com/package/vinyl) objects where [`options.path`](https://github.com/gulpjs/vinyl#optionspath) can be mapped to a route
 - In Angular the [`renderModuleFactory`](https://angular.io/api/platform-server/renderModuleFactory) can be [used as a route renderer](https://github.com/angular/universal-starter/blob/master/prerender.ts#L36) and thus wrapped to consume a `vinyl` object
 - The prerendered output can be streamed back into a `vinyl` collection for further processing like critical CSS and HTML minification
+
+### Persistence
+
+- [`vinyl-js-git`](https://github.com/mu-cms/vinyl-js-git) can be used to expose local or remote [`git`](https://git-scm.com/) repositories as a collection of [`vinyl`](https://www.npmjs.com/package/vinyl) objects for both read and write operations
 
 ### Data
 
