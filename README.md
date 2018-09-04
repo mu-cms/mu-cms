@@ -23,7 +23,7 @@ Micro CMS defines patterns for comon flows for content management.
 - **Data** : Describes how to provide access content via GraphQL
 - **Layout** : Describes how individual page layout is handled
 
-### Autoring
+### Authoring
 
 - `author` creates branch `feature` from `master` branch
 - `author` creates `articles/testing.md` containing [front matter](https://jekyllrb.com/docs/front-matter/) and [`markdown`](https://daringfireball.net/projects/markdown/syntax)
