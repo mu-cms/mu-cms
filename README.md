@@ -16,12 +16,12 @@ Traditional Content Management Systems (CMS) mainly come in three popular flavou
 
 Micro CMS defines patterns for comon flows for content management.
 
-- **Authoring** : A pattern based on [`git`](https://git-scm.com/) and [`markdown`](https://daringfireball.net/projects/markdown/syntax) for content authoring
-* **Publishing** : Building on the previous pattern - use [`git`](https://git-scm.com/) for content publishing
-- **Building** : Describes how to use [GulpJS](https://gulpjs.com/) and [Angular](https://angular.io/) SSR for static publishing
-- **Persistence** : Describes how [`vinyl`](https://www.npmjs.com/package/vinyl) objects can be loaded from and save to [`git`](https://git-scm.com/) repositories
-- **Data** : Describes how to provide access content via GraphQL
-- **Layout** : Describes how individual page layout is handled
+- [**Authoring**](#authoring) : A pattern based on [`git`](https://git-scm.com/) and [`markdown`](https://daringfireball.net/projects/markdown/syntax) for content authoring
+* [**Publishing**](#publishing) : Building on the previous pattern - use [`git`](https://git-scm.com/) for content publishing
+- [**Building**](#building) : Describes how to use [GulpJS](https://gulpjs.com/) and [Angular](https://angular.io/) SSR for static publishing
+- [**Persistence**](#persistence) : Describes how [`vinyl`](https://www.npmjs.com/package/vinyl) objects can be loaded from and save to [`git`](https://git-scm.com/) repositories
+- [**Data**](#data) : Describes how to provide access content via GraphQL
+- [**Layout**](#layout) : Describes how individual page layout is handled
 
 ### Authoring
 
