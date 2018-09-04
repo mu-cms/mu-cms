@@ -25,7 +25,7 @@ Micro CMS defines patterns for comon flows for content management.
 ### Autoring
 
 - `author` creates branch `feature` from `master` branch
-- `author` creates `articles/testing.md` containing [front matter](https://jekyllrb.com/docs/front-matter/) and `[markdown](https://daringfireball.net/projects/markdown/syntax)`
+- `author` creates `articles/testing.md` containing [front matter](https://jekyllrb.com/docs/front-matter/) and [`markdown`](https://daringfireball.net/projects/markdown/syntax)
 - `author` commits changes to the `feature` branch and syncs it to `origin` on a periodic basis as the branch develops
 - When `author` is done he sends a [merge request](https://docs.gitlab.com/ee/user/project/merge_requests/) to `editor` requesting review and merge of `feature` on `master`
 - `author` and `editor` go through the reviewing process and in the end `editor` [squases and merges](https://docs.gitlab.com/ee/user/project/merge_requests/squash_and_merge.html) `feature` on `master`
