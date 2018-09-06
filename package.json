@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/mu-cms/mu-cms/issues"
   },
-  "homepage": "https://github.com/mu-cms/mu-cms#readme"
+  "homepage": "https://github.com/mu-cms/mu-cms#readme",
+  "dependencies": {
+    "@mu-cms/gulp-ssr-angular": "0.0.0",
+    "angular-io-example": "file:../../schoolapply/universal-angular",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.4.0",
+    "merge2": "^1.2.2",
+    "path": "^0.12.7"
+  }
 }
