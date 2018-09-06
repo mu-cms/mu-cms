@@ -11,7 +11,6 @@ gulp.task('default', function() {
   const index = require.resolve('angular-io-example/dist/browser/index.html');
   // Angular files relative to index
   const app = gulp.src(dirname(index) + '/**')
-    .pipe(gulp.dest('dist'));
   // static HTML files from routes
   const routes = gulp.src('routes/**/*.md')
     .pipe(plugin(renderFactory(readFileSync(index))))
