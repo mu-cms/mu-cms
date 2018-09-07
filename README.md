@@ -8,7 +8,7 @@ Traditional Content Management Systems (CMS) mainly come in three popular flavou
 
 - **Full Stack**: Popular all-in-one solutions that provide everything from a WYSIWYG authoring, persistence, authoring flow, HTML rendering, API access, publishing and hosting.
 - **Headless**: Up and comming variant of full-stack that delegates the HTML rendering to clients accessing the content via API.
-- **Static**: Static website generation from souce such as [Jekyll](https://jekyllrb.com/) which is used and supported by [GitHub](https://github.com/) or standalone solutions such as [GatsbyJS](https://www.gatsbyjs.org/).
+- **Static**: Static website generation from source such as [Jekyll](https://jekyllrb.com/) which is used and supported by [GitHub](https://github.com/) or standalone solutions such as [GatsbyJS](https://www.gatsbyjs.org/).
 
 > TODO: Explain micro CMS approach to modular full-stack
 
