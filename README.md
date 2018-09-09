@@ -52,7 +52,10 @@ Micro CMS defines patterns for comon flows for content management.
 
 - [`apollo-angular`](https://www.apollographql.com/docs/angular/basics/setup.html) is used for all data access both in the server and the browser
 - During the build we'll use [`TransferState`](https://angular.io/api/platform-browser/TransferState) to [serialize our apollo cache to the HTML output](https://github.com/apollographql/apollo-angular/blob/master/docs/source/recipes/server-side-rendering.md)
-- During build [graphql resolvers](https://www.apollographql.com/docs/graphql-tools/resolvers) can be used to intercept content queries and populate them from the initial `vinyl` objects as well as generating additional `vinyl` objects that can be used to create [ETL](https://en.wikipedia.org/wiki/Extract,_transform,_load) artifacts targeting a running GraphQL server
+- [`apollo-link`](https://www.apollographql.com/docs/link/) provides a way for providing alternate data to GraphQL clients during runtime.
+  - During build we bridge access to the `vinyl` collection
+  - During mock we can skip the `vinyl` step and bridge access to the `fs`
+  - A separate `apollo-link` can be created to generate [ETL](https://en.wikipedia.org/wiki/Extract,_transform,_load) packages for deployment to GraphQL servers.
 
 ### Layout
 
