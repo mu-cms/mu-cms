@@ -21,6 +21,7 @@ Micro CMS defines patterns for comon flows for content management.
 - [**Building**](#building) : Describes how to use [GulpJS](https://gulpjs.com/) and [Angular](https://angular.io/) SSR for static publishing
 - [**Persistence**](#persistence) : Describes how [`vinyl`](https://www.npmjs.com/package/vinyl) objects can be loaded from and save to [`git`](https://git-scm.com/) repositories
 - [**Data**](#data) : Describes how to provide access content via GraphQL
+- [**State**](#state) : Describes how to control application state with GraphQL
 - [**Layout**](#layout) : Describes how individual page layout is handled
 
 ### Authoring
@@ -56,6 +57,13 @@ Micro CMS defines patterns for comon flows for content management.
   - During build we bridge access to the `vinyl` collection
   - During mock we can skip the `vinyl` step and bridge access to the `fs`
   - A separate `apollo-link` can be created to generate [ETL](https://en.wikipedia.org/wiki/Extract,_transform,_load) packages for deployment to GraphQL servers.
+
+### State
+
+- [`apollo-state`](https://www.apollographql.com/docs/link/links/state.html) can be integrated with [`xstate`](https://www.npmjs.com/package/xstate) to provide access to local application state as well as the statechart itself via GraphQL.
+  - [`extendedState`](https://github.com/davidkpiano/xstate/blob/master/docs/api/machine.md#machinetransitionstate-event-extendedstate) can be bridged using `apollo-state`
+  - Actions via [GraphQL mtations](https://www.apollographql.com/docs/angular/basics/mutations.html)
+  - Event via [GraphQL subscriptions](https://www.apollographql.com/docs/angular/features/subscriptions.html)
 
 ### Layout
 
